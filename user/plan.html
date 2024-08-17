@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+#calendar {
+    margin: 20px auto;
+    width: 300px;
+}
+
+#form-container {
+    margin: 20px auto;
+    width: 300px;
+}
+
+#meal-plans {
+    margin: 20px auto;
+    width: 300px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 5px 0;
+}
+
+input[type="text"], input[type="date"] {
+    margin: 5px 0;
+    padding: 8px;
+}
+
+button {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostel Mess Scheduler</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Hostel Mess Scheduler</h1>
+    <div id="calendar"></div>
+    <div id="form-container">
+        <h2>Add Meal Plan</h2>
+        <form id="meal-form">
+            <label for="meal-date">Date:</label>
+            <input type="date" id="meal-date" required>
+            <label for="meal-plan">Meal Plan:</label>
+        </form>
+    </div>
+
+    <div class="day">
+        <div class="meal">
+            <span>Morning</span>
+            <label><input type="checkbox" data-day="Monday" data-meal="morning"> Yes</label>
+        </div>
+        <div class="meal">
+            <span>Noon</span>
+            <label><input type="checkbox" data-day="Monday" data-meal="noon"> Yes</label>
+        </div>
+        <div class="meal">
+            <span>Night</span>
+            <label><input type="checkbox" data-day="Monday" data-meal="night"> Yes</label>
+        </div>
+    <div id="form-container">
+            <a href="./dash/dash.html"><button type="submit">Submit</button></a>
+    </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

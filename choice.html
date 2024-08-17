@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    text-align: center;
+}
+
+.role-selection {
+    margin-bottom: 20px;
+}
+
+button {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mess Schedule</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Mess Schedule</h1>
+        <div class="role-selection">
+            <a href="./admin/admin.html"><button id="admin-btn">Admin</button></a>
+            <a href="./user/index.html"><button id="user-btn">User</button></a>
+        </div>
+        <div id="role-content" class="hidden">
+            <!-- Content will be loaded here based on role -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
